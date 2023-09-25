@@ -1,0 +1,65 @@
+.dash {
+  background-color: var(--main_color);
+  padding: 20px;
+}
+.cards {
+  .crd {
+    background-color: var(--main_color);
+  }
+}
+.custmore {
+  background-color: var(--main_color);
+}
+.orders {
+  background-color: var(--main_color);
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    text-align: center;
+}
+
+tr {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:1024px) {
+    table {
+        border: none;
+    }
+
+    th {
+        display: none;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    td {
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+    
+    }
+
+    td::before {
+        content: attr(datalable);
+        font-weight: 600;
+        font-style: 17px;
+        min-width: 30%;
+    }
+}
+
+.works{
+    background-color: var(--main_color);
+}

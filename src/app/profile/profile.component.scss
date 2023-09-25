@@ -1,0 +1,46 @@
+.profile {
+  background-color: var(--main_color);
+}
+.profile_body {
+  background-color: var(--main_color);
+}
+
+.circle {
+  background: lightblue;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  left: -35px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.horizontel{
+  width: 95px;
+  height: 5px;
+  background-color: #0d99ff;
+  color: #0d99ff;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -68px;
+  top: 60px;
+}
+.horizontel1 {
+  top: 31%;
+  @extend .horizontel
+}
+.horizontel2 {
+  top: 52%;
+  @extend .horizontel
+
+}
+.horizontel3 {
+  top: 73%;
+  @extend .horizontel
+
+}
+
+.circle:hover {
+  background-color: #0d99ff;
+  transition: all 0.3s ease-in-out;
+}

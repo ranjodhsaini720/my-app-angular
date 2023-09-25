@@ -1,0 +1,37 @@
+<nav class="d-flex align-items-center px-4 fixed-top">
+  <div class="container-fluid">
+    <i class="fa-solid fa-bars-staggered fs-2" (click)="app.show()"></i>
+  </div>
+  <div class="d-flex align-items-center pt-2">
+    <div class="me-4">
+      <i class="fa-regular fa-bell fs-2"></i><sup>8</sup>
+    </div>
+    <div class="me-4">
+      <i class="fa-regular fa-envelope fs-2"></i><sup>10</sup>
+    </div>
+  </div>
+  <div class="search-box">
+    <button class="btn-search"><i class="fas fa-search"></i></button>
+    <input type="text" class="input-search" id="search" placeholder="Type to Search...">
+  </div>
+  <div class="profile">
+    <div class="dropdown">
+      <a class="ms-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="../../assets/image/avatar-3.png" alt="profile" class="w-50 rounded-circle">
+      </a>
+
+      <ul class="dropdown-menu">
+        <div class="text-white text-center pt-3">
+          <h5>Anu</h5>
+          <p>Web Developer</p>
+        </div>
+        <li><a class="dropdown-item" routerLink="profile">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Message</a></li>
+        <li><a class="dropdown-item" href="#">Help</a></li>
+        <hr class="text-white">
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

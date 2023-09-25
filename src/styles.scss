@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+// font family
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+:root {
+  --main_color: #0d1e3f !important;
+  --second_color: #001235 !important;
+}
+
+nav {
+  height: 70px;
+  background-color: var(--main_color);
+  color: white;
+  box-shadow: 0px 0px 25px 0px var(--second_color);
+}
+
+#main {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+}
+.side {
+  background-color: var(--main_color);
+  color: white;
+  width: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 25px 0px var(--second_color);
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+z-index: 1;
+}
+.content {
+  width: calc(100% - 350px);
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.toggleclass .side{
+  width: 80px;
+  transition: all 0.5s ease-in-out;
+
+}
+.toggleclass .content {
+  width: calc(100% - 80px);
+  transition: all 0.5s ease-in-out;
+
+}
+
+.toggleclass .side span{
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.toggleclass .side .pro{
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+
+}
+
+@media (max-width: 991.98px) {
+  .side {
+    width: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    transition: all 0.5s;
+  }
+  .toggleclass .side {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .toggleclass .content {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .content {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .toggleclass .side span{
+    opacity: 1;
+  }
+}
+
+.content::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: var(--main_color);
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.side::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.side::-webkit-scrollbar-thumb {
+  background: rgb(24, 22, 22);
+}
+
+.side::-webkit-scrollbar-track {
+  background: white;
+}
